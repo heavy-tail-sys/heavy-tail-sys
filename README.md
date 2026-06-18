@@ -51,15 +51,15 @@ widgets.interact(
                                layout=widgets.Layout(width='400px'))
 
 
-# ### Future Implementation: Topological Twist and Berry Phase via Möbius Manifolds
 
-#I am analyzing an architectural extension to this Hamiltonian model. There appears to be a missing algebraic component required to accurately map multi-particle fermionic correlation under non-trivial boundary conditions. 
 
-#The objective is to formalize a new code block that correlates this 2-site Hubbard-like interaction with a non-orientable Möbius strip topology. Specifically, this system expansion investigates how the continuous-time quantum walk encodes the Geometric Berry Phase, evaluating the conditions under which the fermionic wave function undergoes a sign inversion ($e^{i\pi} = -1$) upon completing a full spatial rotation across the topological twist. 
+# Heavy-tail-sys: Simple 2-Site Fermionic Hubbard Hamiltonian Solver
 
-#*UI/UX Visualization Note (Munzner Audit):* 
-#Under Tamara Munzner's Nested Model for data visualization, utilizing distinct categorical hues (the current rainbow configuration) for this ordered, quantitative energy spectrum violates visual channel effectiveness guidelines. To maintain mathematical expressiveness, the production implementation should map quantum state occupancy via a sequential luminance gradient (e.g., light to dark steel blue). 
+This is a minimal numerical playground written in Python to visualize eigenvalue splits in a reduced 2-site fermionic Hubbard matrix. 
 
-#To prioritize the core algebraic validation of the Hamiltonian, this matplotlib rendering remains unaltered in the current commit. This structural mismatch is left open intentionally as a micro-refactoring vector. 
+The script utilizes NumPy (np.linalg.eigvalsh) to solve a basic 4D Fock space matrix under localized energy potentials and hopping terms ($t$).
 
-#If any peer or academic expert wants to audit the topology or formally align the visual channels with Munzner's rules, feel free to submit a Pull Request or fork the kernel. The immediate milestone is to map this non-smooth phase space transformation within category-theoretic structures before deploying the matrix extension in Lean 4 or Qiskit frameworks. (Learning Lean).
+## The Conceptual Roadmap (Future Work):
+The code currently executes a static matrix solver. The long-term objective is to scale this toy model into a continuous functional framework, exploring how wave-function sign inversions ($e^{i\pi} = -1$) behave under non-orientable Möbius boundary conditions. 
+
+If you want to rigorously correct my math or optimize these basic NumPy loops, please don't hesitate to do so. (Epoch Base-16: 0x7D9).
